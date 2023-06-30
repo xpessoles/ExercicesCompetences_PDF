@@ -1,0 +1,56 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage[%
+	pdftitle={Exercices de SII},
+	pdfauthor={Xavier Pessoles}]{hyperref}
+\newcommand{\repRel}{../..}
+\newcommand{\repStyle}{\repRel/Style}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_pedagogique}
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExos}{\repRel/ExercicesCompetences}
+\newcommand{\repExo}{dossier}
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+\begin{document}
+\def\xxcompetences{}
+\def\xxfigures{}
+\graphicspath{{\repStyle/png/}}
+\setlength{\columnseprule}{.1pt}
+\input{\repRel/Style/Entete_DDS}
+\def\xxpartie{}
+\def\xxnumpartie{}
+\def\xxchapitre{}
+\def\xxnumchapitre{}
+\def\xxactivite{DDV}
+\def\xxtitreexo{Les ptits devoirs de vacances}
+\def\xxsourceexo{Xavier Pessoles}
+\input{\repRel/Style/pagegarde_TD}
+\pagestyle{fancy}
+\thispagestyle{plain}
+\vspace{4.5cm}
+\proffalse
+
+%\chapter{Analyser} 
+
+\section{Petits exercices de méca sur les chaînes ouvertes -- RT} 
+
+\begin{multicols}{2} 
+\renewcommand{\repExo}{\repExos/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques/05_RT}
+\renewcommand{\td}{05_RT}
+\graphicspath{{\repStyle/png/}{\repExo/images/}}
+\input{\repExo/\td.tex}
+
+
+\end{multicols}
+
+
+
+
+
+\end{document} 
